@@ -1,3 +1,4 @@
+import subprocess
 import time
 import os
 Q1 = input("""
@@ -57,9 +58,8 @@ while True:
         if MainMenu == '1':
             break
         if MainMenu == '2':
-            print("The feature in progress.")
-            time.sleep(1)
-            break
+            subprocess.Popen('C:\Program Files\Google\Chrome\Application\chrome.exe')
+        
     else:
         print('Access Denied')
         print('The Program Will Now Shutdown!')
