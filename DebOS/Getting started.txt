@@ -1,0 +1,7 @@
+HEY!!
+Thanks for downloading the DebOS v0.1.0
+If you're downloaded the operation system for the first time, read and follow this steps.
+1. Open "ChromeSetup.exe
+2. When it's completed, open DebOS.
+3. Sign up a new account.(when you're trying to set up an account, you need to(first time - just print setup34) print your password(if you had an account already) then, print new password and username.
+If you had any issues with the DebOS, please write them to the github(link here)
