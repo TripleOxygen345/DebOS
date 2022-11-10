@@ -1,6 +1,16 @@
 import subprocess
 import time
 import os
+def consl():
+    print("deb console v0.7")
+    command = input("$ {}".format(UserName))
+    if command == 'version--':
+        print("debOS v0.2.0(Black Sky)")
+    if command == '?':
+        print("Commands : version--(shows version), ?(Shows command list)")
+
+def doesFileExists(filePathAndName):
+            return os.path.exists(filePathAndName)
 Q1 = input("""
 DEB OS
 LOG IN
@@ -11,8 +21,6 @@ LOG IN
 if Q1 == '2':
     Password = input('Please Enter Your Password: ')
     while True:
-        def doesFileExists(filePathAndName):
-            return os.path.exists(filePathAndName)
 
         if doesFileExists('./Password.txt'):
             with open('Password.txt') as f:
@@ -28,9 +36,9 @@ if Q1 == '2':
         else:
             with open('Password.txt', 'w') as f:
                 f.write(Password)
-            print('Password.txt Was Created! The Program will Now Shutdown')
+            print('A new Account was Created! The Program will Now Shutdown')
             time.sleep(1.10)
-            exit()
+            break
 
 
 
@@ -52,6 +60,8 @@ while True:
         print('Welcome To DEB OS, {}'.format(UserName))
         MainMenu = input("""
                 What Would You Like To Do?
+                [4]. Calculator
+                [3]. Console
                 [2]. Browser
                 [1]. Exit OS
                 """)
@@ -59,9 +69,12 @@ while True:
             break
         if MainMenu == '2':
             subprocess.Popen('C:\Program Files\Google\Chrome\Application\chrome.exe')
-        
+        if MainMenu == '3':
+            consl()
+        if MainMenu == '4':
+            subprocess.Popen('C:\Windows\System32\calc.exe')
     else:
         print('Access Denied')
-        print('The Program Will Now Shutdown!')
+        print('The OS Will Now Shutdown!')
         time.sleep(1.15)
         exit()

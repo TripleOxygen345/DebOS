@@ -1,5 +1,5 @@
 HEY!!
-Thanks for downloading the DebOS v0.1.0
+Thanks for downloading the DebOS v0.2.0 Black Sky!
 If you're downloaded the operation system for the first time, read and follow this steps.
 1. Open "ChromeSetup.exe
 2. When it's completed, open DebOS.
